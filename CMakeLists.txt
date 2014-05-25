@@ -51,7 +51,7 @@ endif(WIN32)
 add_subdirectory(src)
 
 # Testing
-if (CMAKE_PROJECT_NAME STREQUAL "Uri" OR CPP-NETLIB_BUILD_TESTS)
+if (CPP-NETLIB_BUILD_TESTS)
   enable_testing()
   find_package(GTest REQUIRED)
   add_subdirectory(test)
